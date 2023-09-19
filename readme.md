@@ -14,6 +14,10 @@ This guide will walk you through running a Go application in a Docker container.
 Before you begin, make sure you have the following installed on your system:  
 - [Docker](https://www.docker.com/get-started/)  
 
+## Running in Docker with a script ##
+This is the easiest way to run the application. Just clone the repo and run this script. It will automatically build the Docker image and run it.
+- **./build-and-run.sh**
+
 ## Building the Docker Image ##
 1. Clone or download the repository containing the Go application and the Dockerfile.
 2. Open a terminal and navigate to the directory containing the Dockerfile and the Go application code.
