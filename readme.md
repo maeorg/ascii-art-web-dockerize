@@ -32,8 +32,10 @@ To stop the running container, open a new terminal window and use the following 
 After stopping the container, you can remove it by running:
 - **docker rm <container_id>**  
 
+
 Additionally, you can remove the Docker image to save disk space:
 - **docker rmi docker-asciiweb**  
+
 
 **Authors**  
 Katrina Mäeorg  
