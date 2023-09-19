@@ -1,0 +1,74 @@
+.backgroundImage {
+    background-image: url("./374190906_692491016255669_8872153578850848866_n.jpg");    
+  }
+
+  .textareaStyle {
+    max-width: 80%;
+    width: 300px;
+    height: 100%;
+    max-height: 500px;
+  }
+
+  .container {
+    max-width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.867);
+    padding: 50px;
+  }
+
+  .container_smaller {
+    background: rgba(255, 255, 255, 0.867);
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .asciiResult {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+  .introductionText {
+    margin: 10px;
+    margin-bottom: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+  }
+
+  .bannerSelection {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin: 10px;
+  }
+
+  .submitButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .toHomepage {
+    background-color: #4c74af;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }

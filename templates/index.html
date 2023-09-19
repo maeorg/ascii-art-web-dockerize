@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ascii Art Web</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="backgroundImage">
+    <div class="container">
+    <form method="POST" action="/ascii-art">
+        <div class="container_smaller">
+        <h1>Ascii Art Web</h1>
+        <div class="introductionText">
+            This is a webpage where you can turn normal text into ascii art form. Just insert your text and hit "Format to ascii"<br><br>
+            Try it out below: 
+        </div>
+        <textarea class="textareaStyle" id="myTextarea" name="text" rows="15">
+{123}<Hello>(World)!</textarea>
+    <div class="bannerSelection">
+        <p>Select a banner style:</p>
+        <input type="radio" id="standard" name="banner" value="standard" checked="checked">
+        <label for="standard">Standard</label></br><br>
+        <input type="radio" id="shadow" name="banner" value="shadow">
+        <label for="shadow">Shadow</label></br><br>
+        <input type="radio" id="thinkertoy" name="banner" value="thinkertoy">
+        <label for="thinkertoy">Thinkertoy</label></br><br>
+        <input class="submitButton" type="submit" value="Format to ascii" />
+        </div>
+    </form>
+    </div>
+</div>
+</body>
+<script>
+    // Get a reference to the textarea element
+    var textarea = document.getElementById("myTextarea");
+    
+    // Set the maximum length for each row (line)
+    var maxRowLength = 35;
+    
+    // Add an event listener for input
+    textarea.addEventListener("input", function() {
+        var lines = textarea.value.split("\n");
+        for (var i = 0; i < lines.length; i++) {
+            if (lines[i].length > maxRowLength) {
+                // Trim the line to the maximum length
+                lines[i] = lines[i].substring(0, maxRowLength);
+            }
+        }
+        // Rejoin the lines and update the textarea value
+        textarea.value = lines.join("\n");
+    });
+    </script>
+</html>
