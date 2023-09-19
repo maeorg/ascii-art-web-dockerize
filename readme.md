@@ -10,9 +10,9 @@ Ascii-art-web is a webpage where you can turn normal text into ascii art. In thi
 ## Running the Dockerized Go Application ##
 This guide will walk you through running a Go application in a Docker container. The provided Dockerfile uses the official Go image as a base and demonstrates a typical workflow for containerizing a Go application.
 
-### Prerequisites ###
-Before you begin, make sure you have the following installed on your system:  
-- [Docker](https://www.docker.com/get-started/)
+> ### Prerequisites ###
+> Before you begin, make sure you have the following installed on your system:  
+> - [Docker](https://www.docker.com/get-started/)
 
 ### Building the Docker Image ###
 1. Clone or download the repository containing the Go application and the Dockerfile.
