@@ -21,7 +21,7 @@ Before you begin, make sure you have the following installed on your system:
 - **docker build --tag docker-asciiweb .**
 
 > ### Running the Docker Container ###
-> Once the Docker image is built, you can run a Docker container from it. This command starts a Docker container from the *docker-asciiweb* image and maps port 8080 from the container to the same port on your host machine. Your Go application will be accessible at http://localhost:8080 in your web browser or via a web API request.
+>> Once the Docker image is built, you can run a Docker container from it. This command starts a Docker container from the *docker-asciiweb* image and maps port 8080 from the container to the same port on your host machine. Your Go application will be accessible at http://localhost:8080 in your web browser or via a web API request.
 > - **docker run -p 8080:8080 docker-asciiweb**
 
 ### Stopping the Container ###
