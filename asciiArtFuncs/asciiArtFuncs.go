@@ -2,6 +2,7 @@ package asciiArtWeb
 
 import (
 	"os"
+	"regexp"
 	"strings"
 )
 
@@ -19,7 +20,8 @@ func ReadBanner(bannerName string) string {
 		if err != nil {
 			return string("Error: " + err.Error())
 		}
-		asciiLines = strings.Split(string(file), "\n")
+		lineRegex := regexp.MustCompile(`\r?\n`)
+		asciiLines = lineRegex.Split(string(file), -1)
 	} 
 	return ""
 }
